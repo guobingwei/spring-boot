@@ -1,6 +1,8 @@
 package com.example.service;
 
 import com.example.domain.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -16,6 +18,8 @@ import java.util.List;
 @Repository
 public class UserService {
     private final JdbcTemplate jdbcTemplate;
+    static Logger log = LoggerFactory.getLogger(UserService.class);
+
 
     @Autowired
     public UserService(JdbcTemplate jdbcTemplate) {
@@ -30,10 +34,9 @@ public class UserService {
             @Override
             public User mapRow(ResultSet resultSet, int i) throws SQLException {
                 User user = new User();
-
                 user.setId(resultSet.getInt("id"));
                 user.setName(resultSet.getString("name"));
-
+                log.info("user info - " + user);
                 return user;
             }
         });
