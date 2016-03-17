@@ -4,10 +4,7 @@ import com.example.domain.User;
 import com.example.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -43,12 +40,13 @@ public class HelloController {
         return ll;
     }
 
-    @RequestMapping(value = "test-post", method = RequestMethod.POST)
-    public ModelAndView insertData(@ModelAttribute User user) {
+    @RequestMapping(value = "test-post", method = RequestMethod.POST,  produces = "application/json", consumes = "application/json")
+    @ResponseBody
+    public String insertData(@RequestBody User user) {
         if(user != null) {
             service.insertData(user);
         }
 
-        return new ModelAndView("/hello");
+        return "ok";
     }
 }

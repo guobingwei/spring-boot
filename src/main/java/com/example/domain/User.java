@@ -6,6 +6,15 @@ package com.example.domain;
 public class User {
     private long id;
     private String name;
+    private String userId;
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 
     public long getId() {
         return id;
