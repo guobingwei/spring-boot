@@ -40,8 +40,7 @@ public class HelloController {
         return ll;
     }
 
-    @RequestMapping(value = "test-post", method = RequestMethod.POST,  produces = "application/json", consumes = "application/json")
-    @ResponseBody
+    @RequestMapping(value = "test-post", method = RequestMethod.POST)
     public String insertData(@RequestBody User user) {
         if(user != null) {
             service.insertData(user);
