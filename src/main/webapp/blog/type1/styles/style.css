@@ -236,6 +236,7 @@ code {
 	position:		relative;
 	padding: 		0px 0px 0px 0px;
 	margin: 20px 20px;
+	font-size: 20px;
 }
 .sf-menu li:hover, .sf-menu li.current{}
 .sf-menu a:hover, .sf-menu li.current > a{ }
