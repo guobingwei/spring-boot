@@ -14,7 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class DemoApplication {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	ModelAndView home() {
-		ModelAndView modelAndView = new ModelAndView("/blog/type1/index.html");
+		ModelAndView modelAndView = new ModelAndView("/front/blog/index.html");
 		return modelAndView;
 	}
 
