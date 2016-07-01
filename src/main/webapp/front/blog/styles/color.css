@@ -8,11 +8,11 @@ CHANGE COLOR STYLE
 
 body {
 	color:#8f8f8f;
-	background:url(../images/bg-body.jpg);
+    background: green;
 }
 
 
-#bodychild { border-top:10px solid #c13a2d}
+#bodychild { border-top: 0px;}
 
 /*============================================== GENERAL SECTION ==============================================*/
 a, .colortext{color:#e85244;}
@@ -326,7 +326,7 @@ background: linear-gradient(to bottom,  #e9e9e9 14%,#f5f0ef 100%); /* W3C */
 /*============================================== FOOTER SECTION ==============================================*/
 
 #footer h2{color:#fff;}
-#footer{ color:#fcb5a8}
+#footer{ color:#332c2b;}
 #footer a, #footer a:visited{color:#fcb5a8;}
 #footer a:hover{color:#fff;}
 
@@ -337,6 +337,6 @@ background: linear-gradient(to bottom,  #e9e9e9 14%,#f5f0ef 100%); /* W3C */
 #footersidebar .rp-widget a{ color:#fff;}
 #footersidebar .rp-widget a:hover{ color:#fcb5a8;}
 
-#outercopyright{ background:#c13a2d; color:#ff8065}
+#outercopyright{ background:#4a4242; color:#f5eeec;}
 #outercopyright a{color:#ff8065;}
 #outercopyright a:hover{ color:#fff;}
