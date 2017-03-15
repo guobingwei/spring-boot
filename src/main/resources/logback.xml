@@ -11,7 +11,7 @@
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>/home/gb/logs/gb.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <FileNamePattern>/opt/spring-boot/logs/spring_boot.%d{yyyy-MM-dd}.log</FileNamePattern>
             <MaxHistory>100</MaxHistory>
         </rollingPolicy>
     </appender>
