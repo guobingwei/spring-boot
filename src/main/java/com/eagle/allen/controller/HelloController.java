@@ -1,11 +1,10 @@
-package com.example.controller;
+package com.eagle.allen.controller;
 
-import com.example.domain.User;
-import com.example.service.UserService;
+import com.eagle.allen.domain.User;
+import com.eagle.allen.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,6 +1,6 @@
-package com.example.service;
+package com.eagle.allen.service;
 
-import com.example.domain.User;
+import com.eagle.allen.domain.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

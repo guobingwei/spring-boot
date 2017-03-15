@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.eagle.allen.domain;
 
 /**
  * Created by john on 2016/3/16.
